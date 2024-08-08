@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Order Your Smoothie</h1>
+    <form id="smoothieForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="size">Size:</label>
+        <select id="size" name="size" required>
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+        </select><br><br>
+
+        <label for="base">Base Liquid:</label>
+        <select id="base" name="base" required>
+            <option value="Water">Water</option>
+            <option value="Almond Milk">Almond Milk</option>
+            <option value="Coconut Water">Coconut Water</option>
+        </select><br><br>
+
+        <label>Ingredients:</label><br>
+        <input type="checkbox" name="ingredients" value="Banana"> Banana<br>
+        <input type="checkbox" name="ingredients" value="Strawberry"> Strawberry<br>
+        <input type="checkbox" name="ingredients" value="Blueberry"> Blueberry<br>
+        <input type="checkbox" name="ingredients" value="Spinach"> Spinach<br>
+        <input type="checkbox" name="ingredients" value="Peanut Butter"> Peanut Butter<br><br>
+
+        <label>Extra Toppings:</label><br>
+        <input type="checkbox" name="toppings" value="Chia Seeds"> Chia Seeds<br>
+        <input type="checkbox" name="toppings" value="Honey"> Honey<br>
+        <input type="checkbox" name="toppings" value="Protein Powder"> Protein Powder<br><br>
+
+        <button type="button" id="orderButton">Order</button>
+    </form>
+
+    <div id="smoothieSummary"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
